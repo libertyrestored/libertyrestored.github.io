@@ -1,0 +1,77 @@
+.theme-dark {
+background-color: $restored;
+color: $whitesmoke;
+
+  .btn {
+  background-color: darken($restored, 5%);
+  color: $white;
+
+    &:hover,
+    &:focus {background-color: darken($restored, 15%)}
+
+  }
+
+  .btn--outline {
+  background-color: rgba($shiraz, 0);
+  color: $whitesmoke;
+
+    &:hover,
+    &:focus {background-color: lighten($shiraz, 10%);}
+
+  }
+
+
+}
+
+
+.theme-light {
+background-color: $white;
+color: $restored;
+
+  .btn {
+  background-color: $restored;
+  color: $white;
+  transition: all 0.3s ease;
+
+    &:hover,
+    &:focus {background-color: darken($restored, 10%);}
+
+  }
+
+  .btn--outline {
+  background-color: $white;
+  border-color: $restored;
+  color: $restored;
+
+    &:hover,
+    &:focus {
+      border-color: darken($restored, 10%);
+      background-color: rgba($restored, 10%);
+      color: $white;
+
+    }
+
+  }
+
+}
+
+
+// Social Themes
+.theme-social {
+padding: 1.5rem;
+color: $white;
+transition: background-color 0.3s ease;
+background-color: $restored;
+text-decoration: none;
+
+  &:hover,
+  &:focus {
+  background-color: darken($restored, 15%);
+  color: $white;
+  }
+
+  .icon {
+  margin-bottom: 0.5em;
+  }
+
+}

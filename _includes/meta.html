@@ -1,0 +1,31 @@
+<meta charset="utf-8"/>
+<meta name="referrer" content="origin"/>
+<meta name="robots" content="index, follow"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta name="google-site-verification" content="YYQaHg82sBDtGmDWmikJjpTbj0MiAn8dOWua-n9_b_Y" />
+
+{% if page.date %}
+  <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
+{% endif %}
+
+{% if page.image %}
+  <meta content="{{ site.url }}/images/{{ page.image }}" property="og:image">
+{% else %}
+  <meta content="{{ site.url }}/images/og-default.jpg" property="og:image">
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+{% endif %}
+
+
+{% if page.categories %}
+  {% for category in page.categories limit:1 %}
+  <meta content="{{ category }}" property="article:section">
+  {% endfor %}
+{% endif %}
+
+{% if page.tags %}
+  {% for tag in page.tags %}
+  <meta content="{{ tag }}" property="article:tag">
+  {% endfor %}
+{% endif %}

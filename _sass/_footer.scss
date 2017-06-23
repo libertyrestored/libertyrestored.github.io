@@ -1,0 +1,46 @@
+.contentinfo {
+position: relative;
+}
+
+.contentinfo__contact {
+text-align: center;
+background: $restored;
+color: $whitesmoke;
+padding: 2rem;
+
+  svg { display: block; margin: 0 auto 1em;}
+  a {
+  color: lighten($linkcolour, 5%);
+  display: block;
+
+  	&:hover {color: $linkcolour;}
+
+  }
+
+}
+
+.contentinfo__smallprint {
+margin: 0;
+padding: 2rem;
+background: darken($restored, 10%);
+color: $white;
+font-size: 1rem;
+}
+
+.contentinfo__copyright {
+
+  small {
+    width: 100%;
+  }
+  @include medium {
+  text-align: right;
+  }
+}
+
+.contentinfo__contact--tel,
+.contentinfo__contact--email,
+.contentinfo__contact--address {
+  padding: 0.5em;
+  flex-direction: column;
+ a {color: $whitesmoke;}
+}

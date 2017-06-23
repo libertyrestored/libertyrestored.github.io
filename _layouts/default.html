@@ -1,0 +1,52 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<!-- #if expr="$HTTP_COOKIE=/fonts\-loaded\=true/" -->
+<html lang="en" class="no-js fonts-loaded">
+<!-- #else -->
+<html lang="en" class="no-js">
+<!-- #endif -->
+  <head>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="{{ site.baseurl }}/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="{{ site.baseurl }}/manifest.json">
+    <link rel="mask-icon" href="{{ site.baseurl }}/safari-pinned-tab.svg" color="#313640">
+    <meta name="theme-color" content="#ffffff">
+
+    {% include meta.html %}
+
+    <style>
+    @font-face {
+        font-family: 'lovetime_cleanregular';
+        src: url('/fonts/lovetime_clean-webfont.woff2') format('woff2'),
+             url('/fonts/lovetime_clean-webfont.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+
+    {% seo %}
+
+  </head>
+
+  <body id="top">
+
+    {% include header.html %}
+    {% include main.html %}
+    {% include footer.html %}
+    {% include nav-off-canvas.html %}
+
+    {% include google-analytics.html %}
+
+    <script src="{{ site.baseurl }}/js/modernizr.js" defer></script>
+    <script src="{{ site.baseurl }}/main.js" defer></script>
+
+
+  </body>
+</html>
