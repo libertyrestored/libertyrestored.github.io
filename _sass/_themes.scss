@@ -61,12 +61,12 @@ color: $restored;
 padding: 1.5rem;
 color: $white;
 transition: background-color 0.3s ease;
-background-color: $restored;
+background-color: $restoredark;
 text-decoration: none;
 
   &:hover,
   &:focus {
-  background-color: darken($restored, 15%);
+  background-color: darken($restoredark, 15%);
   color: $white;
   }
 
