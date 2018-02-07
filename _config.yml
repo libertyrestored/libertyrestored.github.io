@@ -1,5 +1,5 @@
 ---
-title: Liberty Church, Newport, South Wales
+title: Liberty Restored, Newport, South Wales
 timezone: UTC
 collections:
   authors:
@@ -11,9 +11,8 @@ collections:
   uploads:
     title: Uploads
     output: true
-description: As a local church we are a community of everyday people in which Jesus
-  is central, in all we do, as we seek to embrace our city and nation we live in.
-url: https://www.libertychurchuk.com
+description: Liberty Restored - Healthy People, Healthy Families, Healthy City.
+url: https://www.libertyrestored.co.uk
 author: Liberty Church
 twitter:
   username: LibertyChurchUK
@@ -25,10 +24,7 @@ logo: "/images/logos/liberty-church-logo.png"
 lang: en-GB
 social:
   links:
-  - https://twitter.com/LibertyChurchUK
-  - https://www.facebook.com/libertychurchfamily
-  - https://instagram.com/libertychurchuk
-  - https://vimeo.com/libertychurchuk
+  - https://www.facebook.com/libertyrestoreduk
 paginate: 12
 paginate_path: "/blog/page:num/"
 sass:
